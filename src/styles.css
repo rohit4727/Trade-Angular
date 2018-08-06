@@ -1,0 +1,9 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    font-family: monospace !important;
+}
+.m-r-0{margin-right:0 !important;}
+.m-l-0{margin-left:0 !important;}
+.p-r-0{padding-right:0 !important;}
+.p-l-0{padding-left:0 !important;}
