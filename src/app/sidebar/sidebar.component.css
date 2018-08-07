@@ -1,5 +1,9 @@
 .sidebar-ul{
-    list-style: none;  padding-left: 15px; background: #d26406;
+    list-style: none;  padding-left: 15px; background: #195b9e; /* Old browsers */
+background: -moz-linear-gradient(top, #195b9e 0%, #9dbdde 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #195b9e 0%,#9dbdde 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #195b9e 0%,#9dbdde 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195b9e', endColorstr='#9dbdde',GradientType=0 );
 }
 
 .sidebar-ul li a{
