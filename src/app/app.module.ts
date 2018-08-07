@@ -10,6 +10,8 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import { RunscheduleComponent } from './runschedule/runschedule.component';
 import { LivefeedComponent } from './livefeed/livefeed.component';
+import { HttpClientModule } from '@angular/common/http';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { LivefeedComponent } from './livefeed/livefeed.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToolbarModule,ButtonModule
+    ToolbarModule,
+    ButtonModule,
+    HttpClientModule,
+    TableModule
    ],
   providers: [],
   bootstrap: [AppComponent]
