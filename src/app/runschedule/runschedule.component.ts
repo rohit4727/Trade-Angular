@@ -13,7 +13,7 @@ import { RunscheduleService } from './runschedule.service';
 export class RunscheduleComponent implements OnInit {
 
   constructor(private runscheduleService: RunscheduleService) { }
-  jobSchedulerArr: JobScheduler[];
+  jobSchedulerDetailList: JobScheduler[];
   cols: any[];
   ngOnInit() {
     this.getAllJobScheduleDetails();
@@ -28,7 +28,7 @@ export class RunscheduleComponent implements OnInit {
 
   getAllJobScheduleDetails(): void {
     this.runscheduleService.getAllJobScheduleDetails()
-      .subscribe(jobSchedulerArr => this.jobSchedulerArr = jobSchedulerArr);
+      .subscribe(jobSchedulerDetailList => this.jobSchedulerDetailList = jobSchedulerDetailList);
   }
 
 }

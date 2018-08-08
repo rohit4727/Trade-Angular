@@ -1,16 +1,19 @@
-<div class="runschedule-container">
-  <p-table [columns]="cols" [value]="jobSchedulerArr" [scrollable]="true" scrollHeight="100%">
-    <ng-template pTemplate="header" let-columns>
+<hr style="margin-bottom:0;"/>
+<h1>Run/Schedule Details</h1>
+<hr style="margin-top:0;"/>
+<div class="job-sheduler-grid">
+  <p-table [value]="jobSchedulerDetailList" [scrollable]="true" scrollHeight="100%">
+    <ng-template pTemplate="header">
       <tr>
-        <th *ngFor="let col of columns">
+        <th *ngFor="let col of cols">
           {{col.header}}
         </th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <ng-template pTemplate="body" let-jobSchedulerDetail>
       <tr>
-        <td *ngFor="let col of columns">
-          {{rowData[col.field]}}
+        <td *ngFor="let col of cols">
+          {{jobSchedulerDetail[col.field]}}
         </td>
       </tr>
     </ng-template>
